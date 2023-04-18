@@ -5,9 +5,9 @@
 # Learn more from ready-to-use templates: https://www.gitpod.io/docs/introduction/getting-started/quickstart
 
 tasks:
-  - init: npm install
+  - init: npm install && npm audit
     command: npm run dev
+  - command: mkdir -p /workspace/data && mongod --dbpath /workspace/data
 
-# image:
-#   file: .gitpod.dockerfile
-image: gitpod/workspace-mongodb
+image:
+  file: .gitpod.dockerfile
