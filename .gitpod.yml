@@ -9,5 +9,8 @@ tasks:
   - init: npm install && npm audit
     command: npm run dev
 
-image:
-  file: .gitpod.dockerfile
+image: gitpod/workspace-mongodb
+
+# for later usage
+# image:
+#   file: .gitpod.dockerfile
